@@ -1045,11 +1045,11 @@
   }
   .leader-stats {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
-  @media (max-width: 720px) {
-    .leader-stats { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  @media (max-width: 540px) {
+    .leader-stats { grid-template-columns: 1fr; gap: 14px; }
   }
   .leader-stat-item {
     display: flex;
@@ -1221,7 +1221,6 @@
     <section class="screen" id="s4">
       <div class="eyebrow">Scenario 2 of 3</div>
       <h2 id="s4title">Prevent Player 2 from winning by blocking them.</h2>
-      <p id="s4prompt" class="meta" style="margin-top:6px;">Player 2 is about to win. Facts alone won't help — they need to be used strategically.</p>
 
       <div class="context-card" id="contextS4" style="display:none;"></div>
 
@@ -1250,7 +1249,6 @@
     <section class="screen" id="s5">
       <div class="eyebrow">Scenario 3 of 3</div>
       <h2 id="s5title">Use strategic reasoning to plan ahead.</h2>
-      <p id="s5prompt" class="meta" style="margin-top:6px;">Which factors are safe to leave? Player 2 only needs the right pad to appear to win.</p>
 
       <div class="context-card" id="contextS5" style="display:none;"></div>
 
@@ -1278,7 +1276,7 @@
     <section class="screen" id="s6">
       <div class="eyebrow">The teacher view</div>
       <h2>While they play, you see this.</h2>
-      <p class="meta" style="margin-top:6px; max-width:640px;">You can't fake it on a Number Hive board — every move requires the thinking. We measure the facts. The rest is being built in by play.</p>
+      <p class="meta" style="margin-top:6px;">See where each student stands — captured automatically as they play.</p>
 
       <div class="lens">
         <div class="mgrid-wrap">
@@ -1307,6 +1305,10 @@
           </ul>
         </div>
       </div>
+
+      <p class="lens-footer" style="margin-top:18px; max-width:680px; font-size:15px; line-height:1.5; color:var(--ink); font-style:italic;">
+        You can't fake it on a Number Hive board — every move requires the thinking. We measure the facts. The rest is being built in by play.
+      </p>
 
       <div class="pullquote">
         "Students are super engaged. They drive their own learning and actually want to do mathematics."
@@ -1545,27 +1547,6 @@
               <line x1="14" y1="14" x2="19" y2="14" stroke="#F5B825" stroke-width="2" stroke-linecap="round"/>
             </svg>
             <span>Under 10 minutes<br>to set up</span>
-          </div>
-          <div class="leader-stat-item">
-            <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <circle cx="14" cy="9" r="3" fill="none" stroke="#5A9E3A" stroke-width="2"/>
-              <path d="M 8 21 Q 8 15 14 15 Q 20 15 20 21" fill="none" stroke="#5A9E3A" stroke-width="2" stroke-linecap="round"/>
-              <circle cx="6" cy="11" r="2.5" fill="none" stroke="#5A9E3A" stroke-width="1.5"/>
-              <path d="M 1.5 21 Q 1.5 16 6 16" fill="none" stroke="#5A9E3A" stroke-width="1.5" stroke-linecap="round"/>
-              <circle cx="22" cy="11" r="2.5" fill="none" stroke="#5A9E3A" stroke-width="1.5"/>
-              <path d="M 26.5 21 Q 26.5 16 22 16" fill="none" stroke="#5A9E3A" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-            <span>Students engaged<br>from day one</span>
-          </div>
-          <div class="leader-stat-item">
-            <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="4" y="18" width="5" height="6" rx="1" fill="#C78508"/>
-              <rect x="11.5" y="13" width="5" height="11" rx="1" fill="#C78508"/>
-              <rect x="19" y="8" width="5" height="16" rx="1" fill="#C78508"/>
-              <polyline points="4,12 14,7 24,4" fill="none" stroke="#C78508" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <polygon points="20,3 25,3 25,8" fill="#C78508"/>
-            </svg>
-            <span>Evidence of thinking<br>as it happens</span>
           </div>
           <div class="leader-stat-item">
             <svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
